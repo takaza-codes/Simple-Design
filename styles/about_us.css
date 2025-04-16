@@ -1,14 +1,7 @@
 @charset "UTF-8";
-body {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 20px;
-  box-sizing: border-box;
-}
-
-header, .team-pictures, video {
+header,
+.team-pictures,
+video {
   margin: 0;
 }
 
@@ -197,7 +190,8 @@ span {
   justify-self: end;
 }
 
-h2, h3 {
+h2,
+h3 {
   margin: 0;
 }
 
@@ -242,7 +236,8 @@ h2 {
   margin: 0;
 }
 
-.team_info, .projects_info {
+.team_info,
+.projects_info {
   margin: 40px 7rem;
   padding-top: 20px;
   display: grid;
@@ -647,7 +642,8 @@ video {
   h2 {
     font-size: 1.6rem;
   }
-  .team_info, .projects_info {
+  .team_info,
+  .projects_info {
     margin: 40px 1rem 40px 3rem;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
@@ -736,7 +732,8 @@ video {
          column-gap: 0;
     row-gap: 1.5rem;
   }
-  body .concepts .concepts_subheading, body .concepts .concepts_text {
+  body .concepts .concepts_subheading,
+  body .concepts .concepts_text {
     padding: 0 2rem;
   }
   body .concepts .concepts_text {
@@ -755,14 +752,16 @@ video {
     -o-object-position: 20% 100%;
        object-position: 20% 100%;
   }
-  body .team_info, body .projects_info {
+  body .team_info,
+  body .projects_info {
     margin: 0;
     grid-template-columns: 1fr;
     padding: 20px 2rem;
     -moz-column-gap: 0;
          column-gap: 0;
   }
-  body .team_info-icon, body .projects_info-icon {
+  body .team_info-icon,
+  body .projects_info-icon {
     display: none;
   }
   body .team_info .team_info-text {
@@ -834,7 +833,9 @@ video {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  body .founder .founder_name, body .founder .founder_info, body .founder .founder_text {
+  body .founder .founder_name,
+  body .founder .founder_info,
+  body .founder .founder_text {
     padding: 0 2rem;
   }
   body .footer .footer-policy {

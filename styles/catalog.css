@@ -1,9 +1,4 @@
 @charset "UTF-8";
-body {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 20px;
-}
-
 .header_container {
   font-weight: 600;
   font-size: 0.75rem;
@@ -20,7 +15,7 @@ body {
   color: black;
 }
 .header_container .header_logo a span:nth-of-type(2) {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -92,20 +87,20 @@ body {
   left: 25%;
   width: 50%;
   height: 0.1rem;
-  background-color: #BD7048;
+  background-color: #bd7048;
   transform: translateX(50%);
   transition: opacity 0.3s ease;
   opacity: 0;
 }
 .header_container .header_nav-contact .header_nav-list .header_nav-link.active {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .header_container .header_nav-contact .header_nav-list .header_nav-link.active::after {
   opacity: 1;
 }
 .header_container .header_nav-contact .header_nav-list .header_nav-link:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_nav-contact .header_nav-list .header_nav-link:hover::after {
   opacity: 1;
@@ -129,7 +124,7 @@ body {
   color: #3b3b3b;
 }
 .header_container .header_nav-contact .header_contact .header_contact-info a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .header_container .header_nav-contact .header_contact .header_contact-info p {
   font-weight: 500;
@@ -154,7 +149,7 @@ body {
   color: black;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(2) {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_logo a span:nth-of-type(3) {
   font-weight: 400;
@@ -172,14 +167,14 @@ body {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active {
-  color: #BD7048;
+  color: #bd7048;
   font-weight: 600;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link.active::after {
   opacity: 1;
 }
 .footer .footer_container .footer_nav-list .footer_nav-link:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer-policy {
   font-weight: 500;
@@ -191,7 +186,7 @@ body {
   color: rgba(33, 33, 33, 0.5);
 }
 .footer .footer_container .footer-policy li a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_contact {
   display: flex;
@@ -210,7 +205,7 @@ body {
   color: #3b3b3b;
 }
 .footer .footer_container .footer_contact .footer_contact-info a:hover {
-  color: #BD7048;
+  color: #bd7048;
 }
 .footer .footer_container .footer_contact .footer_contact-info p {
   font-weight: 500;
@@ -226,7 +221,6 @@ body {
 }
 
 .main_container {
-  min-width: 90rem;
   padding: 0 0 3rem 0;
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -284,28 +278,28 @@ body {
   border: 1px solid white;
   border-radius: 25px;
   font-family: "Montserrat Alternates", sans-serif;
-  color: #BD7048;
+  color: #bd7048;
   font-size: 15px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   cursor: pointer;
 }
 .cardButton:hover {
-  background-color: #F14635;
+  background-color: #f14635;
   opacity: 0.8;
   color: white;
 }
 .cardButton a {
   text-decoration: none;
-  color: #BD7048;
+  color: #bd7048;
 }
 .cardButton a:hover {
   color: white;
 }
 
 .cardName-secondary {
-  color: #BD7048;
+  color: #bd7048;
 }
 
 .button-container {
@@ -331,10 +325,13 @@ body {
   .cardImage {
     max-width: 15rem;
   }
-  .cardName, .cardButton, .cardButton > a {
+  .cardName,
+  .cardButton,
+  .cardButton > a {
     font-size: 0.8rem;
   }
-  .livingRoom-card0, .livingRoom-card4 {
+  .livingRoom-card0,
+  .livingRoom-card4 {
     display: none;
   }
   .head {

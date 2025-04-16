@@ -1,18 +1,5 @@
 @import "_variables.scss";
 
-// html {
-//   font-size: 20px;
-// }
-
-body {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  font-family: $main-font;
-  font-size: $main-font-size;
-  box-sizing: border-box;
-}
-
 header {
   margin: 0;
 }
@@ -184,14 +171,14 @@ ul {
   font-size: $main-font-size;
   font-weight: $medium-font-weight;
   margin-top: 4rem;
-  margin-bottom: 0.6rem;   
+  margin-bottom: 0.6rem;
 }
 
 .rooms__title {
   font-size: $subheading-font-size;
   font-weight: $subheading-font-weight;
   color: #262626;
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
 
 .rooms__title_text {
@@ -204,43 +191,46 @@ ul {
   margin-bottom: 2.5rem;
 
   .rooms__title_text-one {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      font-size: $main-font-size;
-      font-weight: $main-font-weight;
-      color: $text-color;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: $main-font-size;
+    font-weight: $main-font-weight;
+    color: $text-color;
   }
 
   .rooms__title_text-two {
-      list-style: none;
-      grid-column: 2/3;
-      grid-row: 1/2;
+    list-style: none;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
-  
+
   .rooms__title_text-two span {
-      font-weight: $main-font-weight;
+    font-weight: $main-font-weight;
   }
 
   .rooms__title_text-two h4 {
-      font-size: $main-font-size;
-      font-weight: $medium-font-weight;
-      color: $text-color;
+    font-size: $main-font-size;
+    font-weight: $medium-font-weight;
+    color: $text-color;
   }
 }
 
-button { @include button($button-text-color,
-      $secondary-font-size,
-      $subheading-font-weight,
-      $primary-color);
-      display: flex;
-      max-width: 9rem;
-      min-width: 182px;
-      height: 57px;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 0.7rem;
-  }
+button {
+  @include button(
+    $button-text-color,
+    $secondary-font-size,
+    $subheading-font-weight,
+    $primary-color
+  );
+  display: flex;
+  max-width: 9rem;
+  min-width: 182px;
+  height: 57px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 0.7rem;
+}
 
 .rooms__price {
   font-size: $main-font-size;
@@ -283,7 +273,10 @@ button { @include button($button-text-color,
   margin-bottom: 8rem;
 }
 
-.works, .services, .receive, .rooms {
+.works,
+.services,
+.receive,
+.rooms {
   margin: 0 6rem;
 }
 
@@ -294,7 +287,6 @@ button { @include button($button-text-color,
   font-weight: $secondary-font-weight;
   color: #262626;
 }
-
 
 .services__items {
   display: grid;

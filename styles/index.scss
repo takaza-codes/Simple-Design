@@ -1,14 +1,3 @@
-@import "_variables";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html {
-  font-family: $main-font;
-  font-size: $main-font-size;
-}
-
 .header {
   font-weight: $subheading-font-weight;
   font-size: 0.75rem; //15px
