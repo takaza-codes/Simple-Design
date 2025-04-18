@@ -51,3 +51,15 @@ $question-background: #fafafa;
     opacity: 0.8;
   }
 }
+
+@mixin padding-1440 {
+  padding: 0 5%;
+}
+
+@mixin padding-768 {
+  padding: 0 4%;
+}
+
+@mixin padding-425 {
+  padding: 0 10px;
+}

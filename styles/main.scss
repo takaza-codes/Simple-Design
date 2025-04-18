@@ -1,18 +1,39 @@
 @import "_variables";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 html {
   font-family: $main-font;
   font-size: $main-font-size;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+main {
+  @include padding-1440;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+
+    main {
+      @include padding-768;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    max-width: 425px;
+
+    main {
+      @include padding-425;
+    }
+  }
 }

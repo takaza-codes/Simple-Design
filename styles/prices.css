@@ -673,11 +673,15 @@
   body .options .title-two_background {
     grid-column: 1/2;
     grid-row: 3/4;
+    padding-left: 0;
+    padding-right: 0;
   }
   body .options .options__title-block {
     display: none;
   }
   body .options .title-one_background {
+    padding-left: 0;
+    padding-right: 0;
     border-radius: 0;
   }
   body .options .options__description-one,

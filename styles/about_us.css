@@ -694,9 +694,6 @@ video {
   }
 }
 @media screen and (max-width: 440px) {
-  body {
-    max-width: 440px;
-  }
   body .header_container {
     padding: 2rem;
   }
@@ -723,8 +720,8 @@ video {
   body .concepts {
     max-width: 420px;
     min-width: 400px;
-    min-height: 600px;
-    max-height: 33rem;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr) 280px;
     margin: 40px 0;
@@ -746,7 +743,7 @@ video {
   }
   body .concepts .concepts_image img {
     height: 280px;
-    min-width: 440px;
+    min-width: 410px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 20% 100%;
@@ -796,8 +793,8 @@ video {
   body .founder {
     max-width: 420px;
     min-width: 400px;
-    min-height: 820px;
-    max-height: 1070px;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     grid-template-columns: 1fr;
     grid-template-rows: 7% 7% 19rem 1fr;
     margin: 40px 0;

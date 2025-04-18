@@ -726,6 +726,8 @@
       .title-two_background {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+        padding-left: 0;
+        padding-right: 0;
       }
 
       .options__title-block {
@@ -733,6 +735,8 @@
       }
 
       .title-one_background {
+        padding-left: 0;
+        padding-right: 0;
         border-radius: 0;
       }
 

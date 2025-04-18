@@ -221,7 +221,7 @@
 }
 
 .main_container {
-  padding: 0 0 3rem 0;
+  padding: 3rem 0;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
@@ -245,11 +245,17 @@
 .head {
   display: flex;
   font-size: 30px;
-  padding: 3rem;
+  padding: 3rem 1rem;
   gap: 2rem;
 }
 .head img {
   max-width: 60rem;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .cardsContainer {
@@ -281,8 +287,7 @@
   color: #bd7048;
   font-size: 15px;
   background-color: #fafafa;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0.5rem 1.5rem;
   cursor: pointer;
 }
 .cardButton:hover {
@@ -306,6 +311,7 @@
   padding-top: 1rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .button {
@@ -318,17 +324,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main_container {
-    min-width: 760px;
-    max-width: 768px;
-  }
   .cardImage {
-    max-width: 15rem;
+    max-width: 220px;
+    max-height: 250px;
   }
   .cardName,
   .cardButton,
   .cardButton > a {
     font-size: 0.8rem;
+  }
+  .cardButton {
+    padding: 0.5rem;
   }
   .livingRoom-card0,
   .livingRoom-card4 {
@@ -397,21 +403,15 @@
   .header_container .burger-checkbox:checked ~ .header_nav-contact {
     width: 12rem;
   }
-  .main_container,
-  .header,
-  .footer {
-    min-width: 27.5rem;
-  }
   .cardsContainer {
     display: none;
   }
   .cardsContainer-mobile {
     display: flex;
-    justify-content: space-between;
-    padding-left: 2.5rem;
+    justify-content: center;
   }
   .cardImage-mobile {
-    height: 13.6rem;
+    max-width: 400px;
   }
   .main_ccontainer-head {
     display: none;
