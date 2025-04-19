@@ -614,6 +614,38 @@ video {
   }
 }
 
+@media screen and (max-width: 1040px) {
+  html {
+    font-size: 18px;
+  }
+  .header {
+    .header_container {
+      .header_nav-contact {
+        .header_nav {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .concepts,
+  .founder {
+    margin-left: 0;
+    min-width: 1000px;
+    max-width: 1024px;
+    column-gap: 2rem;
+
+    .concepts {
+      padding-right: 0;
+
+      .concepts_image {
+        object-fit: cover;
+        overflow-x: hidden;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     max-width: 768px;
@@ -689,9 +721,10 @@ video {
 
   .concepts {
     max-height: 300px;
-    max-width: 715px;
+    max-width: 750px;
     min-width: 600px;
-    margin: 40px 0 40px 3rem;
+    margin: 40px 0;
+    padding-right: 0;
     column-gap: 2rem;
 
     .concepts_text {
