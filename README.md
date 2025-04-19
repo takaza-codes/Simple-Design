@@ -3,10 +3,16 @@
 A multi-page responsive website for Simple Design -- an interior design bureau located in Kazakhstan.
 
 <img src="/images/readme/main-page.png">
+Main page, header
+
 <img src="/images/readme/video-about-us.png">
+About us, footer
+
+<img src="/images/readme/burger.png">
+CSS-only burger menu
 ---
 
-## Tech stack
+## Tech stack:
 
 - **HTML5**
 - **CSS3** + SCSS, normalize.css
@@ -22,7 +28,7 @@ Design-~5000-9000?node-id=0%3A1">Simple Design</a>
 
 ---
 
-## Contributors 💪
+## Contributors:
 
 [![Contributors](https://contrib.rocks/image?repo=AlyonaKI/Simple-Design)](https://github.com/AlyonaKI/Simple-Design/graphs/contributors)
 
