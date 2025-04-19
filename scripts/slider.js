@@ -2,26 +2,34 @@ const track = document.querySelector(".pictures__track");
 const btnLeft = document.querySelector(".pictures__arrow--left");
 const btnRight = document.querySelector(".pictures__arrow--right");
 const cards = document.querySelectorAll(".pictures__card");
-let currentPosition = 0;
-const visibleCards = 1;
+
+let currentIndex = 0;
 const totalCards = cards.length;
-function updatePosition() {
-  const cardWidth = cards[0].offsetWidth;
-  track.style.transform = `translateX(-${currentPosition * cardWidth}px)`;
-  btnLeft.disabled = currentPosition === 0;
-  btnRight.disabled = currentPosition >= totalCards - visibleCards;
+
+function updateSlider() {
+  const cardWidth = cards[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+  btnLeft.disabled = currentIndex === 0;
 }
+
 btnRight.addEventListener("click", () => {
-  if (currentPosition < totalCards - visibleCards) {
-    currentPosition++;
-    updatePosition();
+  if (currentIndex < totalCards - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
   }
+  updateSlider();
 });
+
 btnLeft.addEventListener("click", () => {
-  if (currentPosition > 0) {
-    currentPosition--;
-    updatePosition();
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlider();
   }
 });
-window.addEventListener("resize", updatePosition);
-updatePosition();
+
+window.addEventListener("resize", updateSlider);
+
+window.addEventListener("load", updateSlider);
+

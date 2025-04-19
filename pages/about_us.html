@@ -98,64 +98,40 @@
           <div class="team_info-icon"></div>
           <h2 class="team_info-text">В команде Simple Design <br><span>21 человек</span></h2>
         </div>
-        <div class="team_pictures">
-        <button class="pictures__arrow pictures__arrow--left" disabled>←</button>
-        <div class="pictures__track-wrapper">
-          <div class="pictures__track">
-            <div class="pictures__card">
-              <img
-                src="../images/about_us/carousel.svg"
-                alt="Команда"
-              />
-            </div>
-            <div class="pictures__card">
-              <img
-                src="../images/about_us/carousel2.jpg"
-                alt="Дизайнер за работой"
-              />
-            </div>
-            <div class="pictures__card">
-              <img
-                src="../images/about_us/carousel3.jpg"
-                alt="Кабинет"
-              />
-            </div>
-            <div class="pictures__card">
-              <img
-                src="../images/style_overview/carousel_img.svg"
-                alt="Спальня"
-              />
+        <div class="pictures">
+          <div class="pictures__wrapper">
+          <button class="pictures__arrow pictures__arrow--left" disabled>←</button>
+          <div class="pictures__track-wrapper">
+            <div class="pictures__track">
+              <div class="pictures__card">
+                <img
+                  src="../images/about_us/carousel.svg"
+                  alt="Команда"
+                />
+              </div>
+              <div class="pictures__card">
+                <img
+                  src="../images/about_us/carousel2.jpg"
+                  alt="Дизайнер за работой"
+                />
+              </div>
+              <div class="pictures__card">
+                <img
+                  src="../images/about_us/carousel3.jpg"
+                  alt="Кабинет"
+                />
+              </div>
+              <div class="pictures__card">
+                <img
+                  src="../images/style_overview/carousel_img.svg"
+                  alt="Спальня"
+                />
+              </div>
             </div>
           </div>
+          <button class="pictures__arrow pictures__arrow--right">→</button>
         </div>
-        <button class="pictures__arrow pictures__arrow--right">→</button>
-
-          <!-- <div class="carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
-                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                    </div>
-                </li>
-                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                </li>
-                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                </li>
-                <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                </li>
-            </ol> -->
-    
-          </div>
+        </div>
 
         </div>
       </section>
@@ -186,12 +162,25 @@
           <div class="projects_info-icon"></div>
           <h2 class="projects_info-subheading"><span>За 4 года</span> мы реализовали<br> более 250 проектов</h2>
         </div>
-        <div class="projects_video">
-          <video controls>
-            <source src="../images/about_us/3769951-hd_1920_1080_25fps.mp4" type="video/mp4">
-            Ваш браузер не поддерживает воспроизведение видео.
-          </video>
+
+        <div class="projects-video">
+          <div class="projects-video__wrapper">
+            <video class="projects-video__player">
+              <source src="../images/about_us/3769951-hd_1920_1080_25fps.mp4" type="video/mp4">
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+        
+            <div class="projects-video__overlay">
+              <button class="projects-video__play-btn">
+                <img src="../images/play-icon.svg" alt="Play">
+              </button>
+              <p class="projects-video__text">
+                <span>Show Reel</span> готовых проектов
+              </p>
+            </div>
+          </div>
         </div>
+        
       </section>
     </main>
     <footer class="footer">
@@ -255,5 +244,6 @@
       </div>
     </footer>
     <script src="../scripts/slider.js"></script>
+    <script src="../scripts/video_controls.js"></script>
   </body>
 </html>
