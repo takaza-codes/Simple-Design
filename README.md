@@ -3,13 +3,14 @@
 A multi-page responsive website for Simple Design -- an interior design bureau located in Kazakhstan.
 
 <img src="/images/readme/main-page.png">
-Main page, header
+<i>Main page, header</i>
 
 <img src="/images/readme/video-about-us.png">
-About us, footer
+<i>About us, footer</i>
 
 <img src="/images/readme/burger.png">
-CSS-only burger menu
+<i>CSS-only burger menu</i>
+
 ---
 
 ## Tech stack:
