@@ -254,30 +254,33 @@ button {
   padding-left: 1.3rem;
 }
 
-.receive__example_items h4 {
-  font-size: $main-font-size;
-  font-weight: $medium-font-weight;
-  color: $text-color;
-}
+.receive__example_items {
+  h4 {
+    font-size: $main-font-size;
+    font-weight: $medium-font-weight;
+    color: $text-color;
+  }
 
-.receive__example_items p {
-  font-size: $secondary-font-size;
-  font-weight: $subheading-font-weight;
-  color: #020202;
-  margin-bottom: 0.3rem;
+  a {
+    text-decoration: none;
+    color: $main-color;
+
+    &:hover {
+      color: $third-button-color;
+    }
+  }
+
+  p {
+    font-size: $secondary-font-size;
+    font-weight: $subheading-font-weight;
+    margin-bottom: 0.3rem;
+  }
 }
 
 .receive__example {
   display: flex;
   align-items: center;
   margin-bottom: 8rem;
-}
-
-.works,
-.services,
-.receive,
-.rooms {
-  margin: 0 6rem;
 }
 
 .services__title {
@@ -514,7 +517,6 @@ button {
 
 @media screen and (max-width: 768px) {
   body {
-    max-width: 768px;
     .header {
       .header_container {
         .burger-menu {
@@ -581,12 +583,21 @@ button {
       display: none;
     }
 
+    .unit1 {
+      margin-top: 2rem;
+      max-width: 758px;
+      padding-right: 0;
+      object-fit: cover;
+      overflow-x: hidden;
+    }
+
     .img_unit1:first-child {
       display: none;
     }
 
     .img_unit1:nth-child(2) {
-      max-width: 760px;
+      max-width: 758px;
+      object-fit: contain;
     }
 
     .rooms__title_text {
@@ -623,13 +634,6 @@ button {
       display: none;
     }
 
-    .works,
-    .services,
-    .receive,
-    .rooms {
-      margin: 0 3rem;
-    }
-
     .services__title,
     .works__title {
       margin-bottom: 1.5rem;
@@ -650,7 +654,7 @@ button {
 
       a {
         padding-left: 0.3rem;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
       }
     }
 
@@ -686,8 +690,6 @@ button {
 
 @media screen and (max-width: 440px) {
   body {
-    max-width: 440px;
-
     .header {
       .header_container {
         padding: 2rem;
@@ -733,7 +735,7 @@ button {
     .services__items {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 40px 1fr 40px 1fr 40px;
-      justify-items: start;
+      justify-items: center;
 
       .services__item-two_image {
         grid-column: 1 / 2;
@@ -751,6 +753,7 @@ button {
         align-self: start;
         padding-left: 1.5rem;
         margin: 0;
+        font-size: 0.8rem;
       }
 
       div {

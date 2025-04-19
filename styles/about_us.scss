@@ -217,7 +217,7 @@ h2 {
 }
 
 .founder {
-  max-height: 460px;
+  min-height: fit-content;
   max-width: 1350px;
   min-width: 1200px;
   margin: 30px 0 30px 7rem;
@@ -248,7 +248,7 @@ h2 {
   }
 
   .founder_text {
-    padding-right: 15rem;
+    padding-right: 5rem;
     font-size: 1rem;
 
     p {
